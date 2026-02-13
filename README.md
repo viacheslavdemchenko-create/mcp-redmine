@@ -15,9 +15,6 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 
 ## Instalation guide
 ### 1. Install `uv`
-
-## Usage with Claude Desktop
-### 1. `uv` Installation using
 Install uv if you haven't already.
 
 - Linux
@@ -39,6 +36,10 @@ Ensure you have uv installed.
 ```bash
 uv --version
 ```
+
+## Usage with Cursor
+
+## Usage with Claude Desktop
 
 Add to your `claude_desktop_config.json`:
 ```json
