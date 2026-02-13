@@ -100,7 +100,7 @@ docker --version
 
 Build docker image:
 ```bash
-git clone git@github.com:runekaagaard/mcp-redmine.git
+git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git
 cd mcp-redmine
 docker build -t mcp-redmine .
 ```
