@@ -13,7 +13,7 @@ Let Claude/Cursor be your Redmine assistant! MCP Redmine connects Claude/Cursor 
 
 Uses httpx for API requests and integrates with the Redmine OpenAPI specification for comprehensive API coverage.
 
-![MCP Redmine in action](https://raw.githubusercontent.com/runekaagaard/mcp-redmine/refs/heads/main/screenshot.png)
+### [Redmine OpenAPI]([url](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FLerrrtaste%2Fredmine-openapi-specification%2Fmain%2Fredmine_openapi.yaml))
 
 
 ## Instalation guide
