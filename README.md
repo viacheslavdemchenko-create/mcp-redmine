@@ -30,7 +30,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
   - Activate virtual environment:
     - Windows: `.venv\Scripts\Activate.ps1`
     - macOO: `source ./venv/bin/activate`
-  - Install dependencies `uv pip install -e . `
+  - Install dependencies `uv pip install -e .`
 - Run MCP Server `uv run mcp_redmine\server.py`
 
 
@@ -274,30 +274,4 @@ Please mark issue #123 as "In Progress" and add a comment: "I've started working
 
 ```
 Log 3.5 hours against issue #456 for "Implementing user authentication" done today.
-```
-
-## MCP Directory Listings
-
-MCP Redmine is listed in the following MCP directory sites and repositories:
-
-- [MCP.so](https://mcp.so/server/mcp-redmine)
-- [Glama](https://glama.ai/mcp/servers/@runekaagaard/mcp-redmine)
-
-## Developing
-
-First clone the github repository and install the dependencies:
-
-```
-git clone git@github.com:runekaagaard/mcp-redmine.git
-cd mcp-redmine
-uv sync
-```
-
-Then set this in claude_desktop_config.json:
-
-```
-...
-"command": "uv",
-"args": ["run", "--directory", "/path/to/mcp-redmine", "-m", "mcp_redmine.server", "main"],
-...
 ```
