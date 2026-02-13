@@ -29,7 +29,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Install dependencies
 
 
-## Docker MCP server
+## Docker MCP server TODO: Do i need python locally?
 - Install python -> [Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)
 - Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
