@@ -39,6 +39,7 @@ uv --version
 
 ## Usage with Cursor
 
+
 ## Usage with Claude Desktop
 
 Add to your `claude_desktop_config.json`:
@@ -60,7 +61,7 @@ Add to your `claude_desktop_config.json`:
   }
 ```
 
-### 2. Installation using `docker`
+## 2. Installation using `docker`
 
 Ensure you have docker installed. 
 ```bash
