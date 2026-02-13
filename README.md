@@ -11,10 +11,7 @@ Let Claude/Cursor be your Redmine assistant! MCP Redmine connects Claude/Cursor 
 - Update issue statuses and fields
 - Access comprehensive Redmine API functionality
 
-Uses httpx for API requests and integrates with the Redmine OpenAPI specification for comprehensive API coverage.
-
-### [Redmine OpenAPI]([url](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FLerrrtaste%2Fredmine-openapi-specification%2Fmain%2Fredmine_openapi.yaml))
-
+Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FLerrrtaste%2Fredmine-openapi-specification%2Fmain%2Fredmine_openapi.yaml) requests and integrates with the Redmine OpenAPI specification for comprehensive API coverage.
 
 ## Instalation guide
 ### 1. Install `uv`
