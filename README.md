@@ -21,8 +21,8 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Install python -> [Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)
 - Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
-  - REDMINE_URL
-  - REDMINE_API_KEY
+  - REDMINE_URL -> [Getting Redmine URL](#getting-redmine-url)
+  - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
   - REDMINE_REQUEST_INSTRUCTIONS
   - REDMINE_ALLOWED_DIRECTORIES
 - Install `uv` python package manager
@@ -33,8 +33,8 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Install python -> [Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)
 - Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
-  - REDMINE_URL
-  - REDMINE_API_KEY
+  - REDMINE_URL -> [Getting Redmine URL](#getting-redmine-url)
+  - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
   - REDMINE_REQUEST_INSTRUCTIONS
   - REDMINE_ALLOWED_DIRECTORIES
 TBD
@@ -137,7 +137,7 @@ Add to your `claude_desktop_config.json`:
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
-| `REDMINE_URL` | Yes | - | URL of your Redmine instance. Subpaths are supported (e.g., `http://localhost/redmine/`) |
+| `REDMINE_URL` | Yes | - | URL of your Redmine instance. |
 | `REDMINE_API_KEY` | Yes | - | Your Redmine API key (see below for how to get it) |
 | `REDMINE_REQUEST_INSTRUCTIONS` | No | - | Path to a file containing additional instructions for the redmine_request tool. I've found it works great to have the LLM generate that file after a session. ([example1](INSTRUCTIONS_EXAMPLE1.md) [example2](INSTRUCTIONS_EXAMPLE2.md)) |
 | `REDMINE_HEADERS` | No | (empty) | Custom HTTP headers to include in all requests. Format: `"Header1: Value1, Header2: Value2"`. Useful for proxies that require additional authentication (e.g., `X-Redmine-Username`) |
@@ -150,14 +150,18 @@ Add to your `claude_desktop_config.json`:
 
 > **Security Note**: The `REDMINE_ALLOWED_DIRECTORIES` setting protects against path traversal attacks. Paths containing `../` are resolved before validation, ensuring files can only be accessed within the allowed directories.
 
+## Getting Redmine URL
 
-## Getting Your Redmine API Key
+1. Copy Redmine domain part to use in your configuration
+
+## Getting Redmine API Key
 
 1. Log in to your Redmine instance
-2. Go to "My account" (typically found in the top-right menu)
-3. On the right side of the page, you should see "API access key"
-4. Click "Show" to view your existing key or "Generate" to create a new one
-5. Copy this key for use in your configuration
+2. On the top-right corner click human icon
+3. Click "My account/Moje konto" section
+4. If right sidebar hidden click on 3 dots icon. On the right side of the page, you should see "API access key/Klucz dostępu do API"
+5. Click "Show/Pokaz" to view your existing key or "Generate" to create a new one
+6. Copy this key for use in your configuration
 
 ## API
 
