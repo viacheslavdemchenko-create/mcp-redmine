@@ -2,9 +2,7 @@
 
 **Status: Works great and is in daily use without any known bugs.**
 
-**Status2: I just added the package to PyPI and updated the usage instructions. Please report any issues :)**
-
-Let Claude be your Redmine assistant! MCP Redmine connects Claude Desktop to your Redmine instance, allowing it to:
+Let Claude/Cursor be your Redmine assistant! MCP Redmine connects Claude/Cursor to your Redmine instance, allowing it to:
 
 - Search and browse projects and issues
 - Create and update issues with full markdown support
@@ -18,14 +16,11 @@ Uses httpx for API requests and integrates with the Redmine OpenAPI specificatio
 ![MCP Redmine in action](https://raw.githubusercontent.com/runekaagaard/mcp-redmine/refs/heads/main/screenshot.png)
 
 
+## Instalation guide
+### 1. Install `uv`
+
 ## Usage with Claude Desktop
-### 1. Installation using `uv`
-
-Ensure you have uv installed.
-```bash
-uv --version
-```
-
+### 1. `uv` Installation using
 Install uv if you haven't already.
 
 - Linux
@@ -42,6 +37,11 @@ Install uv if you haven't already.
   ```powershell
   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
   ```
+
+Ensure you have uv installed.
+```bash
+uv --version
+```
 
 Add to your `claude_desktop_config.json`:
 ```json
