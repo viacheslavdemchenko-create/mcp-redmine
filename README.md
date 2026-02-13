@@ -50,7 +50,6 @@ TBD
 
 ## uv Instalation guide
 ### 1. Install `uv`
-Install uv if you haven't already.
 
 - Linux
   ```bash
