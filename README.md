@@ -25,8 +25,13 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
   - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
   - REDMINE_REQUEST_INSTRUCTIONS
   - REDMINE_ALLOWED_DIRECTORIES
-- Install `uv` python package manager
-- Install dependencies
+- Install `uv` python package manager -> [uv Instalation guide](#uv-instalation-guide)
+  - Create virtual environment `uv venv`
+  - Activate virtual environment:
+    - Windows: `.venv\Scripts\Activate.ps1`
+    - Macos: `source ./venv/bin/activate`
+  - Install dependencies `uv pip install -e . `
+- Run MCP Server `uv run mcp-server`
 
 
 ## Docker MCP server TODO: Do i need python locally?
@@ -43,7 +48,7 @@ TBD
 
 ## Prepare `env` variables
 
-## Instalation guide
+## uv Instalation guide
 ### 1. Install `uv`
 Install uv if you haven't already.
 
