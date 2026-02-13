@@ -19,7 +19,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 
 ## Local MCP server
 - Install python -> [Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)
-- Clone repository -> `git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git`
+- Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
   - REDMINE_URL
   - REDMINE_API_KEY
@@ -31,7 +31,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 
 ## Docker MCP server
 - Install python -> [Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)
-- Clone repository -> `git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git`
+- Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
   - REDMINE_URL
   - REDMINE_API_KEY
