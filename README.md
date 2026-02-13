@@ -13,6 +13,28 @@ Let Claude/Cursor be your Redmine assistant! MCP Redmine connects Claude/Cursor 
 
 Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.githubusercontent.com%2FLerrrtaste%2Fredmine-openapi-specification%2Fmain%2Fredmine_openapi.yaml) requests and integrates with the Redmine OpenAPI specification for comprehensive API coverage.
 
+## We can run MCP server locally or in docker container. 
+- How to run MCP server locally
+- How to run MCP server in Docker container
+
+## Local MCP server
+- Install python -> [[Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)]
+- Clone repository
+- Prepare `env` variables
+- Install `uv` python package manager
+- Install dependencies
+- 
+
+## Docker MCP server
+- Install python -> [[Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)]
+- Clone repository
+- Prepare `env` variables
+TBD
+
+## Clone repository
+
+## Prepare `env` variables
+
 ## Instalation guide
 ### 1. Install `uv`
 Install uv if you haven't already.
