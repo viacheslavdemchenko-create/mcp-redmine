@@ -301,33 +301,3 @@ Then set this in claude_desktop_config.json:
 "args": ["run", "--directory", "/path/to/mcp-redmine", "-m", "mcp_redmine.server", "main"],
 ...
 ```
-
-## My Other LLM Projects
-
-- **[MCP Alchemy](https://github.com/runekaagaard/mcp-alchemy)** - Connect Claude Desktop to databases for exploring schema and running SQL.
-- **[MCP Notmuch Sendmail](https://github.com/runekaagaard/mcp-notmuch-sendmail)** - Email assistant for Claude Desktop using notmuch.
-- **[Diffpilot](https://github.com/runekaagaard/diffpilot)** - Multi-column git diff viewer with file grouping and tagging.
-- **[Claude Local Files](https://github.com/runekaagaard/claude-local-files)** - Access local files in Claude Desktop artifacts.
-
-## Contributing
-
-Contributions are warmly welcomed! Whether it's bug reports, feature requests, documentation improvements, or code contributions - all input is valuable. Feel free to:
-
-- Open an issue to report bugs or suggest features
-- Submit pull requests with improvements
-- Enhance documentation or share your usage examples
-- Ask questions and share your experiences
-
-The goal is to make Redmine project management with Claude even better, and your insights and contributions help achieve that.
-
-## Acknowledgments
-
-This project builds on the excellent work of others:
-
-- [httpx](https://www.python-httpx.org/) - For handling HTTP requests
-- [Redmine OpenAPI Specification](https://github.com/d-yoshi/redmine-openapi) - For the comprehensive API specification
-- [Redmine](https://www.redmine.org/) - The flexible project management web application
-
-## License
-
-Mozilla Public License Version 2.0
