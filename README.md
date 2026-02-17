@@ -41,11 +41,6 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
   - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
   - REDMINE_REQUEST_INSTRUCTIONS
   - REDMINE_ALLOWED_DIRECTORIES
-TBD
-
-## Clone repository
-
-## Prepare `env` variables
 
 ## uv Instalation guide
 ### 1. Install `uv`
