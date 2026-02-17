@@ -52,7 +52,9 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
                 "--refresh-package", "mcp-redmine", "mcp-redmine"],
         "env": {
           "REDMINE_URL": "https://your-redmine-instance.example.com",
-          "REDMINE_API_KEY": "your-api-key"
+          "REDMINE_API_KEY": "your-api-key",
+          "REDMINE_REQUEST_INSTRUCTIONS": "OPTIONAL",
+          "REDMINE_ALLOWED_DIRECTORIES": "OPTIONAL"
         }
       }
   }
@@ -115,8 +117,8 @@ In docker desktop you should see mcp-redmine image created.
         "env": {
           "REDMINE_URL": "https://your-redmine-instance.example.com",
           "REDMINE_API_KEY": "your-api-key",
-          "REDMINE_REQUEST_INSTRUCTIONS": "/app/INSTRUCTIONS.md",
-          "REDMINE_ALLOWED_DIRECTORIES": "/app/uploads"
+          "REDMINE_REQUEST_INSTRUCTIONS": "OPTIONAL",
+          "REDMINE_ALLOWED_DIRECTORIES": "OPTIONAL"
         }
       }
     }
