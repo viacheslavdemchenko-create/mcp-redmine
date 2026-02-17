@@ -83,6 +83,9 @@ git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git
 cd mcp-redmine
 docker build -t mcp-redmine .
 ```
+In docker desktop you should see mcp-redmine image created.
+<img width="1914" height="1017" alt="image" src="https://github.com/user-attachments/assets/2ed3bd0a-d424-4018-8adc-7c2fdc64adcb" />
+
 
 ## Usage with Cursor
 
@@ -124,37 +127,6 @@ docker build -t mcp-redmine .
 
 8. Try to pull description for some redmine issue:
 <img width="774" height="175" alt="image" src="https://github.com/user-attachments/assets/61d744c2-734d-48e4-a910-755c527af634" />
-
-## Usage with Claude Desktop
-
-Add to your `claude_desktop_config.json`:
-  ```json
-  {
-    "mcpServers": {
-      "redmine": {
-        "command": "docker",
-        "args":  [
-            "run",
-            "-i",
-            "--rm",
-            "-e", "REDMINE_URL",
-            "-e", "REDMINE_API_KEY",
-            "-e", "REDMINE_REQUEST_INSTRUCTIONS",
-            "-e", "REDMINE_ALLOWED_DIRECTORIES",
-            "-v", "/path/to/instructions.md:/app/INSTRUCTIONS.md",
-            "-v", "/path/to/uploads:/app/uploads",
-            "mcp-redmine"
-        ],
-        "env": {
-          "REDMINE_URL": "https://your-redmine-instance.example.com",
-          "REDMINE_API_KEY": "your-api-key",
-          "REDMINE_REQUEST_INSTRUCTIONS": "/app/INSTRUCTIONS.md",
-          "REDMINE_ALLOWED_DIRECTORIES": "/app/uploads"
-        }
-      }
-    }
-  }
-  ```
 
 ## Environment Variables
 
