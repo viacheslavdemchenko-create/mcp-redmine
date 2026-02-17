@@ -64,28 +64,6 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 8. Try to pull description for some redmine issue:
 <img width="774" height="175" alt="image" src="https://github.com/user-attachments/assets/61d744c2-734d-48e4-a910-755c527af634" />
 
-
-## Usage with Claude Desktop
-
-Add to your `claude_desktop_config.json`:
-```json
-  {
-    "mcpServers": {
-      "redmine": {
-        "command": "uvx",
-        "args": ["--from", "mcp-redmine==2026.01.13.152335",
-                "--refresh-package", "mcp-redmine", "mcp-redmine"],
-        "env": {
-          "REDMINE_URL": "https://your-redmine-instance.example.com",
-          "REDMINE_API_KEY": "your-api-key",
-          "REDMINE_REQUEST_INSTRUCTIONS": "/path/to/instructions.md",
-          "REDMINE_ALLOWED_DIRECTORIES": "/tmp,/home/user/uploads"
-        }
-      }
-    }
-  }
-```
-
 ## Docker MCP server
 - Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
@@ -113,7 +91,7 @@ docker build -t mcp-redmine .
 3. Type: `Open MCP Settings` and click `Enter`
 4. Select on the left hand side: `Tools & MCP`
 5. Click: `New MCP Server`
-6. Add to your `mcp.json` and save file:
+6. Add to your `mcp.json`, save file and reload Cursor:
   ```json
   {
     "mcpServers": {
@@ -141,7 +119,11 @@ docker build -t mcp-redmine .
     }
   }
   ```
-7. Head to `Open MCP Settings` and check if `redmine` have green mark. (try to reload cursor if not)
+7. Head to `Open MCP Settings` and check if `redmine` have green mark.
+<img width="660" height="222" alt="image" src="https://github.com/user-attachments/assets/62c8807d-5ab6-42e6-a30a-451ccda2273d" />
+
+8. Try to pull description for some redmine issue:
+<img width="774" height="175" alt="image" src="https://github.com/user-attachments/assets/61d744c2-734d-48e4-a910-755c527af634" />
 
 ## Usage with Claude Desktop
 
