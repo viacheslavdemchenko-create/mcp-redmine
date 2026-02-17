@@ -71,8 +71,8 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Prepare `.env` variables
   - REDMINE_URL -> [Getting Redmine URL](#getting-redmine-url)
   - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
-  - REDMINE_REQUEST_INSTRUCTIONS
-  - REDMINE_ALLOWED_DIRECTORIES
+  - REDMINE_REQUEST_INSTRUCTIONS `optional`
+  - REDMINE_ALLOWED_DIRECTORIES `optional`
 
 Ensure you have docker installed. 
 ```bash
