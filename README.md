@@ -31,7 +31,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Run MCP Server `uv run mcp_redmine\server.py`
 
 
-> ## Usage with Cursor
+## Usage with Cursor
 
 Add to your `mcp.json`:
 ```json
@@ -45,7 +45,7 @@ Add to your `mcp.json`:
 }
 ```
 
-> ## Usage with Claude Desktop
+## Usage with Claude Desktop
 
 Add to your `claude_desktop_config.json`:
 ```json
