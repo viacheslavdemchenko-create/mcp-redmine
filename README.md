@@ -73,6 +73,15 @@ uv --version
 
 ## Usage with Cursor
 
+Add to your `mcp.json`:
+{
+  "mcpServers": {
+    "redmine": {
+      "type": "sse",
+      "url": "http://127.0.0.1:8000/sse"
+    }
+  }
+}
 
 ## Usage with Claude Desktop
 
