@@ -123,10 +123,11 @@ In docker desktop you should see mcp-redmine image created.
   }
   ```
 7. Head to `Open MCP Settings` and check if `redmine` have green mark.
-<img width="660" height="222" alt="image" src="https://github.com/user-attachments/assets/62c8807d-5ab6-42e6-a30a-451ccda2273d" />
+<img width="662" height="280" alt="image" src="https://github.com/user-attachments/assets/78a1dc96-14fa-40f8-b935-c8321fbd71e6" />
 
 8. Try to pull description for some redmine issue:
-<img width="774" height="175" alt="image" src="https://github.com/user-attachments/assets/61d744c2-734d-48e4-a910-755c527af634" />
+<img width="773" height="248" alt="image" src="https://github.com/user-attachments/assets/ada7c485-9990-4100-8b80-7e57569dc7f0" />
+
 
 ## Environment Variables
 
