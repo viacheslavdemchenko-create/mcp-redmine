@@ -26,7 +26,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
   - Create virtual environment `uv venv`
   - Activate virtual environment:
     - Windows: `.venv\Scripts\Activate.ps1`
-    - macOO: `source ./venv/bin/activate`
+    - macOS: `source ./venv/bin/activate`
   - Install dependencies `uv pip install -e .`
 - Run MCP Server `uv run mcp_redmine\server.py`
 
