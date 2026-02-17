@@ -34,8 +34,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Run MCP Server `uv run mcp_redmine\server.py`
 
 
-## Docker MCP server TODO: Do i need python locally?
-- Install python -> [Download](https://www.python.org/ftp/python/pymanager/python-manager-25.2.msix)
+## Docker MCP server
 - Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
 - Prepare `.env` variables
   - REDMINE_URL -> [Getting Redmine URL](#getting-redmine-url)
