@@ -38,7 +38,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 3. Type: `Open MCP Settings` and click `Enter`
 4. Select on the left hand side: `Tools & MCP`
 5. Click: `New MCP Server`
-6. Add to your `mcp.json` and save file:
+6. Add to your `mcp.json`, save file and reload Cursor:
 ```json
 {
   "mcpServers": {
@@ -58,7 +58,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
   }
 }
 ```
-7. Head to `Open MCP Settings` and check if `redmine` have green mark. (try to reload cursor if not)
+7. Head to `Open MCP Settings` and check if `redmine` have green mark.
 
 ## Usage with Claude Desktop
 
