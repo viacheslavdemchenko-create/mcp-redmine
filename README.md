@@ -31,38 +31,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 - Run MCP Server `uv run mcp_redmine\server.py`
 
 
-## Docker MCP server
-- Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
-- Prepare `.env` variables
-  - REDMINE_URL -> [Getting Redmine URL](#getting-redmine-url)
-  - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
-  - REDMINE_REQUEST_INSTRUCTIONS
-  - REDMINE_ALLOWED_DIRECTORIES
-
-## uv Instalation guide
-### 1. Install `uv`
-
-- Linux
-  ```bash
-  curl -LsSf https://astral.sh/uv/install.sh | sh
-  ```
-
-- macOS
-  ```zsh
-  brew install uv
-  ```
-
-- windows
-  ```powershell
-  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-  ```
-
-Ensure you have uv installed.
-```bash
-uv --version
-```
-
-## Usage with Cursor
+> ## Usage with Cursor
 
 Add to your `mcp.json`:
 ```json
@@ -76,7 +45,7 @@ Add to your `mcp.json`:
 }
 ```
 
-## Usage with Claude Desktop
+> ## Usage with Claude Desktop
 
 Add to your `claude_desktop_config.json`:
 ```json
@@ -97,7 +66,13 @@ Add to your `claude_desktop_config.json`:
   }
 ```
 
-## 2. Installation using `docker`
+## Docker MCP server
+- Clone repository -> ```git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git```
+- Prepare `.env` variables
+  - REDMINE_URL -> [Getting Redmine URL](#getting-redmine-url)
+  - REDMINE_API_KEY -> [Getting Redmine API Key](#getting-redmine-api-key)
+  - REDMINE_REQUEST_INSTRUCTIONS
+  - REDMINE_ALLOWED_DIRECTORIES
 
 Ensure you have docker installed. 
 ```bash
@@ -189,6 +164,29 @@ Add to your `claude_desktop_config.json`:
 > Therefore, if you want to use a local file, you need to **mount it into the container** at the correct location.
 
 > **Security Note**: The `REDMINE_ALLOWED_DIRECTORIES` setting protects against path traversal attacks. Paths containing `../` are resolved before validation, ensuring files can only be accessed within the allowed directories.
+
+## uv Instalation guide
+### 1. Install `uv`
+
+- Linux
+  ```bash
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+  ```
+
+- macOS
+  ```zsh
+  brew install uv
+  ```
+
+- windows
+  ```powershell
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
+
+Ensure you have uv installed.
+```bash
+uv --version
+```
 
 ## Getting Redmine URL
 
