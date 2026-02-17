@@ -73,6 +73,7 @@ uv --version
 ## Usage with Cursor
 
 Add to your `mcp.json`:
+```json
 {
   "mcpServers": {
     "redmine": {
@@ -81,6 +82,7 @@ Add to your `mcp.json`:
     }
   }
 }
+```
 
 ## Usage with Claude Desktop
 
