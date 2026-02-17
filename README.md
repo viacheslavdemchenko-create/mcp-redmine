@@ -38,7 +38,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 3. Type: `Open MCP Settings` and click `Enter`
 4. Select on the left hand side: `Tools & MCP`
 5. Click: `New MCP Server`
-6. Add to your `mcp.json`:
+6. Add to your `mcp.json` and save file:
 ```json
 {
   "mcpServers": {
@@ -109,7 +109,7 @@ docker build -t mcp-redmine .
 3. Type: `Open MCP Settings` and click `Enter`
 4. Select on the left hand side: `Tools & MCP`
 5. Click: `New MCP Server`
-6. Add to your `mcp.json`:
+6. Add to your `mcp.json` and save file:
   ```json
   {
     "mcpServers": {
