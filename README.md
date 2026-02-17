@@ -52,14 +52,13 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
                 "--refresh-package", "mcp-redmine", "mcp-redmine"],
         "env": {
           "REDMINE_URL": "https://your-redmine-instance.example.com",
-          "REDMINE_API_KEY": "your-api-key",
-          "REDMINE_REQUEST_INSTRUCTIONS": "/path/to/instructions.md",
-          "REDMINE_ALLOWED_DIRECTORIES": "/tmp,/home/user/uploads"
+          "REDMINE_API_KEY": "your-api-key"
         }
       }
   }
 }
 ```
+7. Head to `Open MCP Settings` and check if `redmine` have green mark. (try to reload cursor if not)
 
 ## Usage with Claude Desktop
 
@@ -137,6 +136,7 @@ docker build -t mcp-redmine .
     }
   }
   ```
+7. Head to `Open MCP Settings` and check if `redmine` have green mark. (try to reload cursor if not)
 
 ## Usage with Claude Desktop
 
