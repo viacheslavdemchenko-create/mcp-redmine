@@ -118,6 +118,40 @@ git clone https://github.com/viacheslavdemchenko-create/mcp-redmine.git
 cd mcp-redmine
 docker build -t mcp-redmine .
 ```
+
+## Usage with Cursor
+
+Add to your `mcp.json`:
+  ```json
+  {
+    "mcpServers": {
+      "redmine": {
+        "command": "docker",
+        "args":  [
+            "run",
+            "-i",
+            "--rm",
+            "-e", "REDMINE_URL",
+            "-e", "REDMINE_API_KEY",
+            "-e", "REDMINE_REQUEST_INSTRUCTIONS",
+            "-e", "REDMINE_ALLOWED_DIRECTORIES",
+            "-v", "/path/to/instructions.md:/app/INSTRUCTIONS.md",
+            "-v", "/path/to/uploads:/app/uploads",
+            "mcp-redmine"
+        ],
+        "env": {
+          "REDMINE_URL": "https://your-redmine-instance.example.com",
+          "REDMINE_API_KEY": "your-api-key",
+          "REDMINE_REQUEST_INSTRUCTIONS": "/app/INSTRUCTIONS.md",
+          "REDMINE_ALLOWED_DIRECTORIES": "/app/uploads"
+        }
+      }
+    }
+  }
+  ```
+
+## Usage with Claude Desktop
+
 Add to your `claude_desktop_config.json`:
   ```json
   {
