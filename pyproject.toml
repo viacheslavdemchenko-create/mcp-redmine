@@ -8,8 +8,7 @@ dependencies = [
     "httpx>=0.28.1",
     "mcp[cli]>=1.9.0",
     "openapi-core>=0.19.4",
-    "pyyaml>=6.0.2",
-    "load_dotenv>=1.2.1",
+    "pyyaml>=6.0.2"
 ]
 authors = [
   { name="Rune Kaagaard" },
