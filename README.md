@@ -60,7 +60,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 ```
 7. Head to `Open MCP Settings` and check if `redmine` have green mark.
 8. Try to pull description for some redmine issue:
-<img width="775" height="1087" alt="image" src="https://github.com/user-attachments/assets/ab314eeb-e70b-44b1-988d-e09cade2cacb" />
+<img width="774" height="175" alt="image" src="https://github.com/user-attachments/assets/61d744c2-734d-48e4-a910-755c527af634" />
 
 
 ## Usage with Claude Desktop
