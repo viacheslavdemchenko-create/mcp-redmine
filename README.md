@@ -1,6 +1,6 @@
 # MCP Redmine
 
-**Let Claude/Cursor be your Redmine assistant! MCP Redmine connects Claude/Cursor to your Redmine instance, allowing it to:**
+**Let Cursor be your Redmine assistant! MCP Redmine connects Claude/Cursor to your Redmine instance, allowing it to:**
 - Search and browse projects and issues
 - Create and update issues with full markdown support
 - Upload and download file attachments
