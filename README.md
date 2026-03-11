@@ -43,8 +43,6 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
 {
   "mcpServers": {
     "redmine": {
-      "type": "sse",
-      "url": "http://127.0.0.1:8000/sse",
       "command": "uvx",
       "args": [
         "--from",
@@ -56,7 +54,7 @@ Uses httpx for [Redmine API](https://petstore.swagger.io/?url=https%3A%2F%2Fraw.
       "env": {
         "REDMINE_URL": "https://your-redmine-instance.example.com",
         "REDMINE_API_KEY": "your-api-key"
-		    "REDMINE_REQUEST_INSTRUCTIONS": "OPTIONAL",
+		"REDMINE_REQUEST_INSTRUCTIONS": "OPTIONAL",
         "REDMINE_ALLOWED_DIRECTORIES": "OPTIONAL"
       }
     }
